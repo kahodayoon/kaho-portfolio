@@ -1,0 +1,46 @@
+@use '../../foundation/base' as *;
+.c-hamburger {
+  display: block;
+  position: fixed;
+  top: 25px;
+  right: 5.2%;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 15;
+}
+.c-hamburger__bar {
+  display: block;
+  width: 30px;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  background: #000;
+  transition: all 0.5s;
+}
+.c-hamburger__bar:nth-child(1) {
+  top: 4px;
+}
+.c-hamburger__bar:nth-child(2) {
+  top: 14px;
+  transform: translateY(-50%);
+}
+.c-hamburger__bar:nth-child(3) {
+  bottom: 4px;
+  transform: translateY(-100%);
+}
+
+.c-hamburger.open {
+
+  .c-hamburger__bar:nth-child(1) {
+    transform: translateY(11px) rotate(-315deg);
+  }
+  .c-hamburger__bar:nth-child(2) {
+    opacity: 0;
+  }
+  .c-hamburger__bar:nth-child(3) {
+    transform: translateY(-10px) rotate(315deg);
+  }
+}

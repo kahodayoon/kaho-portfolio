@@ -1,0 +1,9 @@
+@use '../../foundation/base' as *;
+.p-profile {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.p-profile__text {
+  padding-bottom: 20px;
+}

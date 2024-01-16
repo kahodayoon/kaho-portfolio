@@ -1,0 +1,12 @@
+@use '../foundation/base' as *;
+.js-home.open {
+  height: 100%;
+  overflow: hidden;
+}
+
+// .js-input:focus,
+// .js-input.not-empty {
+//   + .c-label {
+//     transform: translateY(-24px);
+//   }
+// }

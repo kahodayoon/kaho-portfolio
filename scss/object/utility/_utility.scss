@@ -1,0 +1,13 @@
+@use '../../foundation/base' as *;
+.u-mb {
+  margin-bottom: 30px;
+  @include tab {
+    margin-bottom: 60px;
+  }
+}
+.u-mb-small {
+  margin-bottom: 20px;
+}
+.u-mb-large {
+  margin-bottom: 40px;
+}

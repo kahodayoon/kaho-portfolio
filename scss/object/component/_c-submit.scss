@@ -1,0 +1,12 @@
+@use '../../foundation/base' as *;
+.c-submit {
+  padding: 10px 20px;
+  border-radius: 50%;
+  background-color: #fef4f4;
+  border: #888 2px solid;
+  cursor: pointer;
+  &:hover {
+    border-color: #fef4f4;
+    background-color: $accent-color;
+  }
+}

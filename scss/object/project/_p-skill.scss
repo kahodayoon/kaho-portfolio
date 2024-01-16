@@ -1,0 +1,7 @@
+@use '../../foundation/base' as *;
+.p-skill {
+  display: flex;
+  gap: 5px;
+  text-align: left;
+  padding-bottom: 20px;
+}

@@ -1,0 +1,6 @@
+@use '../../foundation/base' as *;
+.c-image-work {
+  width: 80%;
+  margin: 0 auto; 
+  object-fit: cover;
+}

@@ -1,0 +1,48 @@
+//共通部分
+$font-jp: 'Noto Serif JP', serif;
+$font-en: 'Noto Serif JP', serif;
+$main-bk-color:#fff;
+$archive-bk-color:#3C2B1C;
+$accent-color:#F6BFBC;
+$sub-color:#E4D2D8;
+
+$tab: 650px; //Figmaのサイズは834px
+@mixin tab {
+  @media (min-width: ($tab)) {
+    @content;
+  }
+}
+$pc: 1000px; //Figmaのサイズは1920px
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: $font-jp;
+  font-family: $font-en;
+  color: #3c2a10;
+  background-color: $main-bk-color;
+  height: 100%;
+  position: relative;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+.wrapper {
+  margin: 0 auto;
+  padding: 0 5.2%;
+}

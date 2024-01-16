@@ -1,0 +1,29 @@
+@use '../../foundation/base' as *;
+.p-global-nav {
+  display: block;
+  position: fixed;
+  width: 70%;
+  top: 0px;
+  bottom: 0;
+  padding: 60px 25px;
+  right: -100%;
+  transition: 0.7s;
+  background-color: #fff;
+}
+.p-global-nav__ul {
+  padding: 0;
+}
+.p-global-nav__menu {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #fff;
+  &:last-child {
+    border-bottom: 1px solid #fff;
+  }
+}
+
+.p-global-nav.open {
+  right: 0;
+  z-index: 10;
+  overflow-y: scroll;
+}

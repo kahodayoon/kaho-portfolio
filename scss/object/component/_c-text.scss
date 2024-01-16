@@ -1,0 +1,7 @@
+@use '../../foundation/base' as *;
+.c-text {
+  font-size: 1.4rem;
+}
+.c-text + .c-text {
+  padding-top: 10px;
+}

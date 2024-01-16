@@ -1,0 +1,8 @@
+@use '../../foundation/base' as *;
+.c-image-about {
+  width: 60%;
+  margin: 0 auto; 
+  padding-bottom: 15px;
+  object-fit: cover;
+  border-radius: 40px;
+}

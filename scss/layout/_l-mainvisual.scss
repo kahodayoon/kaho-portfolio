@@ -1,0 +1,9 @@
+@use '../foundation/base' as *;
+.l-mainvisual {
+  height: 350px;
+  background: url(../../images/main-visual1.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

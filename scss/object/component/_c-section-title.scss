@@ -1,0 +1,7 @@
+@use '../../foundation/base' as *;
+.c-section-title {
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 5px solid $accent-color;
+  margin-bottom: 25px;
+}

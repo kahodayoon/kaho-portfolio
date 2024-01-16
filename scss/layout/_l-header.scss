@@ -1,0 +1,10 @@
+@use '../foundation/base' as *;
+.l-header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  z-index: 20;
+  @include pc {
+  }
+}

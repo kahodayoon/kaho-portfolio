@@ -1,0 +1,9 @@
+@use '../foundation/base' as *;
+.l-footer {
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: $sub-color;
+  @include pc {
+  }
+}

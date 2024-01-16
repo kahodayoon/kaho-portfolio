@@ -1,0 +1,8 @@
+@use '../foundation/base' as *;
+.l-section {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  text-align: center;
+  @include pc {
+  }
+}

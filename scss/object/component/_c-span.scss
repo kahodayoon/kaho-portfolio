@@ -1,0 +1,8 @@
+@use '../../foundation/base' as *;
+.c-span {
+  border-bottom: 1px solid $accent-color;
+  &:hover {
+    border-color: #fef4f4;
+    background-color: $accent-color;
+  }
+}

@@ -1,0 +1,17 @@
+@use '../../foundation/base' as *;
+.c-input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  padding: 10px;
+  &:focus {
+    outline: none;
+  }
+}
+.c-input-text:focus,
+.c-input-text.not-empty {
+   + .c-label {
+      transform: translateY(-24px);
+   }
+}

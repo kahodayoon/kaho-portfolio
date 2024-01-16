@@ -1,0 +1,7 @@
+@use '../../foundation/base' as *;
+.p-sns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}

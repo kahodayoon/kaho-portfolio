@@ -1,0 +1,17 @@
+@use '../../foundation/base' as *;
+.c-label {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  line-height: 26px;
+  cursor: text;
+  transition: transform .2s ease-in-out;
+}
+.c-label--message {
+  position: absolute;
+  left: 10px;
+  bottom: 120px;
+  line-height: 26px;
+  cursor: text;
+  transition: transform .2s ease-in-out;
+}
