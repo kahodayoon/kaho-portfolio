@@ -1,8 +1,7 @@
 @use '../../foundation/base' as *;
-.p-sns {
+.p-top {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  gap: 10px;
-  padding-top: 20px;
+  height: 350px;
 }

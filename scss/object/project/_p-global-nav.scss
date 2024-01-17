@@ -9,9 +9,19 @@
   right: -100%;
   transition: 0.7s;
   background-color: #fff;
+  @include tab {
+    position: inherit;
+    width: inherit;
+    padding: 0;
+    transition: 0s;
+  }
 }
 .p-global-nav__ul {
   padding: 0;
+  @include tab {
+    display: flex;
+    gap: 15px;
+  }
 }
 .p-global-nav__menu {
   display: block;

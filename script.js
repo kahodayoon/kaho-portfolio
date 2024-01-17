@@ -27,6 +27,12 @@ $(function () {
     $(".p-global-nav").removeClass("open");
     $(".js-home").removeClass("open");
   });
+  $(window).resize(function () {
+    // 画面幅が変更されたときに実行させたい処理内容
+    $('.c-hamburger').removeClass('open');
+    $('.p-global-nav').removeClass('open');
+    $('.js-home').removeClass('open');
+  });
 
   //スムーススクロール
   $('a[href^="#"]').click(function () {

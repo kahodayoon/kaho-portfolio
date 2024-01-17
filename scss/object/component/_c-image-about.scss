@@ -5,4 +5,7 @@
   padding-bottom: 15px;
   object-fit: cover;
   border-radius: 40px;
+  @include tab {
+    width: 40%;
+  }
 }

@@ -1,7 +1,7 @@
 @use '../../foundation/base' as *;
 .c-hamburger {
   display: block;
-  position: fixed;
+  position: absolute;
   top: 25px;
   right: 5.2%;
   width: 30px;
@@ -10,6 +10,9 @@
   border: none;
   background-color: transparent;
   z-index: 15;
+  @include tab {
+    display: none;
+  }
 }
 .c-hamburger__bar {
   display: block;

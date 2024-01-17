@@ -1,7 +1,7 @@
 @use '../../foundation/base' as *;
 .c-label {
   position: absolute;
-  left: 10px;
+  left: 0px;
   bottom: 10px;
   line-height: 26px;
   cursor: text;
@@ -9,7 +9,7 @@
 }
 .c-label--message {
   position: absolute;
-  left: 10px;
+  left: 0px;
   bottom: 120px;
   line-height: 26px;
   cursor: text;
