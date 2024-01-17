@@ -291,10 +291,18 @@ li {
   margin-bottom: 40px;
 }
 
+@media (min-width: 600px) {
+  .p-grid-skills {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+  }
+}
+
 .u-mb {
   margin-bottom: 30px;
 }
-@media (min-width: 650px) {
+@media (min-width: 600px) {
   .u-mb {
     margin-bottom: 60px;
   }
