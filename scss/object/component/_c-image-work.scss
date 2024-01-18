@@ -1,6 +1,9 @@
 @use '../../foundation/base' as *;
 .c-image-work {
-  // width: 100%;
   margin: 0 auto; 
   object-fit: cover;
+  transition: .6s cubic-bezier(0.33,1,0.68,1);
+}
+.c-image-work:hover {
+  transform: scale(0.9);
 }

@@ -1,6 +1,7 @@
 @use '../../foundation/base' as *;
 .c-span {
   border-bottom: 1px solid $accent-color;
+  transition: .3s;
   &:hover {
     border-color: #fef4f4;
     background-color: $accent-color;

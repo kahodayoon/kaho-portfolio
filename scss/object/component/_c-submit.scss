@@ -5,6 +5,7 @@
   background-color: #fef4f4;
   border: #888 2px solid;
   cursor: pointer;
+  transition: .6s;
   &:hover {
     border-color: #fef4f4;
     background-color: $accent-color;
