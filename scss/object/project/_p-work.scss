@@ -1,0 +1,29 @@
+@use '../../foundation/base' as *;
+.p-work__section {
+  padding-bottom: 40px;
+}
+
+.p-work__h3 {
+  padding: 15px 25px ;
+  font-size: 1.6rem;
+  width: 200px;
+  background-color: $work-color;
+  position: relative;
+  &::before {
+    content: " ";
+    width: 20px;
+    height: 47.59px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $work-sub-color;
+  }
+}
+.p-work__text {
+  padding-top: 15px;
+}
+.p-work__link {
+  display: block;
+  padding-top: 15px;
+  cursor: pointer;
+}

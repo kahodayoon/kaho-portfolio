@@ -5,6 +5,8 @@ $main-bk-color:#fff;
 $archive-bk-color:#3C2B1C;
 $accent-color:#F6BFBC;
 $sub-color:#E4D2D8;
+$work-color:#FEF4F4;
+$work-sub-color:#FDEFF2;
 
 $tab: 650px; //Figmaのサイズは834px
 @mixin tab {
@@ -46,4 +48,10 @@ li {
   margin: 0 auto;
   padding: 0 5.2%;
   max-width: 960px;
+}
+//フッターを常に下部へ固定。
+.wrap{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }

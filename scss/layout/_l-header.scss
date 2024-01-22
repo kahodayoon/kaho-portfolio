@@ -1,11 +1,13 @@
 @use '../foundation/base' as *;
 .l-header {
   height: 80px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
   z-index: 20;
+  margin: 0 auto;
   @include pc {
   }
 }

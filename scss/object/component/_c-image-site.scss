@@ -1,0 +1,9 @@
+@use '../../foundation/base' as *;
+.c-image-site {
+  margin: 0 auto; 
+  object-fit: cover;
+  width: 70%;
+  @include pc {
+    width: 65%;
+  }
+}
