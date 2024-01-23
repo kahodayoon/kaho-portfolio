@@ -2,6 +2,7 @@
 .c-image-work {
   margin: 0 auto; 
   object-fit: cover;
+  // max-width: 350px;
   transition: .6s cubic-bezier(0.33,1,0.68,1);
 }
 .c-image-work:hover {

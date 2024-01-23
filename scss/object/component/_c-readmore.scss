@@ -1,0 +1,14 @@
+@use '../../foundation/base' as *;
+.c-readmore {
+  // color: #4274D3;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  border: transparent;
+  // transition: .6s;
+  // &:hover {
+  //   background-color: $accent-color;
+  // }
+}

@@ -1,4 +1,9 @@
 @use '../../foundation/base' as *;
+.p-work--title {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
 .p-work__section {
   padding-bottom: 40px;
 }
@@ -20,10 +25,10 @@
   }
 }
 .p-work__text {
-  padding-top: 15px;
+    padding: 15px 0 0 5%;
 }
 .p-work__link {
   display: block;
-  padding-top: 15px;
   cursor: pointer;
+  padding: 15px 0 0 5%;
 }
