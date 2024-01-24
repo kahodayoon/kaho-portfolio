@@ -1,0 +1,36 @@
+@use '../../foundation/base' as *;
+.c-pagetop {
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  background: #fff;
+  border: solid 1px #808080;
+  border-radius: 50%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  cursor: pointer;
+  transition: .5s;
+  @include pc {
+    right: 5%;
+  }
+}
+.c-pagetop__arrow {
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-top: 2px solid #808080;
+  border-right: 2px solid #808080;
+  transform: translateY(20%) rotate(-45deg);
+  transition: .5s;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .c-pagetop:hover, .c-pagetop:hover .c-pagetop__arrow {
+      border-color: #fff;
+      background-color: #c0c0c0;
+  }
+}

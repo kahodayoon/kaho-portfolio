@@ -1,11 +1,14 @@
 @use '../../foundation/base' as *;
 .c-image-about {
-  width: 60%;
+  width: 50%;
   margin: 0 auto; 
   padding-bottom: 15px;
   object-fit: cover;
-  border-radius: 40px;
+  border-radius: 50%;
   @include tab {
     width: 40%;
+  }
+  @include pc {
+    width: 35%;
   }
 }

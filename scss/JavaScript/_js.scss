@@ -4,9 +4,16 @@
   overflow: hidden;
 }
 
-// .js-input:focus,
-// .js-input.not-empty {
-//   + .c-label {
-//     transform: translateY(-24px);
-//   }
-// }
+//スクロールで表示される。フェードイン用
+.js-fade {
+  transition: all 1s;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0px, 50px);
+}
+
+.js-fadein {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
+}
