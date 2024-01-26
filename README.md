@@ -1,2 +1,2 @@
-# portfolio
-Kahoのポートフォリオサイトです。
+# kaho-portfolio
+KahoのWordPress化したポートフォリオサイトです。
