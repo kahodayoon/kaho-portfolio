@@ -1,12 +1,12 @@
 @use '../foundation/base' as *;
 .l-mainvisual {
   height: 350px;
-  background: url(../../images/main-visual1.jpg);
+  background-image: url(../images/main-visual1.jpg);
   background-size: cover;
 }
 .l-mainvisual--single {
   height: 80px;
-  background: url(../../images/main-visual1.jpg);
+  background-image: url(../images/main-visual1.jpg);
   background-size: cover;
   display: flex;
   align-items: center;

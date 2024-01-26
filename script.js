@@ -1,20 +1,18 @@
-
-
-$(function () {
-    // フェードイン処理
-    $(window).scroll(function () {
-      $(".js-fade").each(function () {
-        let winheight = $(window).height();
-        let posi = $(this).offset().top;
-        let scroll = $(window).scrollTop();
-        if (scroll + winheight > posi) {
-          $(this).addClass("js-fadein");
-        } else {
-          //スクロールで画面上部に戻った際に要素を非表示にしたい場合は、下記の行のコメントを外し有効にしてください。
-          //$(this).removeClass("js-fadein");
-        }
-      });
+(function($) {
+  // フェードイン処理
+  $(window).scroll(function () {
+    $(".js-fade").each(function () {
+      let winheight = $(window).height();
+      let posi = $(this).offset().top;
+      let scroll = $(window).scrollTop();
+      if (scroll + winheight > posi) {
+        $(this).addClass("js-fadein");
+      } else {
+        //スクロールで画面上部に戻った際に要素を非表示にしたい場合は、下記の行のコメントを外し有効にしてください。
+        //$(this).removeClass("js-fadein");
+      }
     });
+  });
 
   //ハンバーガーボタン
   $(".c-hamburger").click(function () {
@@ -29,9 +27,9 @@ $(function () {
   });
   $(window).resize(function () {
     // 画面幅が変更されたときに実行させたい処理内容
-    $('.c-hamburger').removeClass('open');
-    $('.p-global-nav').removeClass('open');
-    $('.js-home').removeClass('open');
+    $(".c-hamburger").removeClass("open");
+    $(".p-global-nav").removeClass("open");
+    $(".js-home").removeClass("open");
   });
 
   //スムーススクロール
@@ -46,34 +44,37 @@ $(function () {
   });
 
   //CONTACTフォーム
-  $( '.c-input-text' ).keyup(function() {
-    if( $(this).val() ) {
-       $(this).addClass('not-empty');
+  $(".c-input-text").keyup(function () {
+    if ($(this).val()) {
+      $(this).addClass("not-empty");
     } else {
-       $(this).removeClass('not-empty');
+      $(this).removeClass("not-empty");
     }
   });
-  $( '.c-textarea' ).keyup(function() {
-    if( $(this).val() ) {
-       $(this).addClass('not-empty');
+  $(".c-textarea").keyup(function () {
+    if ($(this).val()) {
+      $(this).addClass("not-empty");
     } else {
-       $(this).removeClass('not-empty');
+      $(this).removeClass("not-empty");
     }
   });
 
   //ページトップに戻るボタン
   $(function () {
     $("#js-pagetop").click(function () {
-      $('html, body').animate({
-        scrollTop: 0
-      }, 300);
+      $("html, body").animate(
+        {
+          scrollTop: 0,
+        },
+        300
+      );
     });
     $(window).scroll(function () {
       if ($(window).scrollTop() > 1) {
-        $('#js-pagetop').fadeIn(300).css('display', 'flex')
+        $("#js-pagetop").fadeIn(300).css("display", "flex");
       } else {
-        $('#js-pagetop').fadeOut(300)
+        $("#js-pagetop").fadeOut(300);
       }
     });
   });
-});
+})(jQuery);

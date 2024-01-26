@@ -11,13 +11,13 @@
         <div class="p-grid-works">
           <a href="single-work.html">
           <div class="p-readmore"> 
-            <img class="c-image-work" src="images/work1.png" alt="作品例1">
+            <img class="c-image-work" src="<?php echo get_template_directory_uri(); ?>/images/work1.png" alt="作品例1">
           </div></a>
           <div class="p-readmore">
-            <img class="c-image-work" src="images/350x350.png" alt="作品例2">
+            <img class="c-image-work" src="<?php echo get_template_directory_uri(); ?>/images/350x350.png" alt="作品例2">
           </div>
           <div class="p-readmore">
-            <img class="c-image-work" src="images/350x350.png" alt="作品例3">
+            <img class="c-image-work" src="<?php echo get_template_directory_uri(); ?>/images/350x350.png" alt="作品例3">
           </div>
         </div>
       </section>
@@ -25,42 +25,42 @@
         <h2 class="c-section-title">SKILLS</h2>
         <div class="p-grid-skills">
           <div class="p-skill">
-            <img class="c-icon" src="images/icon-html.png" alt="htmlのアイコン">
+            <img class="c-icon" src="<?php echo get_template_directory_uri(); ?>/images/icon-html.png" alt="htmlのアイコン">
             <div>
               <p class="c-skill">html</p>
               <p class="c-text">デザインカンプに基づいたコーディングが可能です。</p>
             </div>
           </div>
           <div class="p-skill">
-            <img class="c-icon" src="images/icon-css.png" alt="cssのアイコン">
+            <img class="c-icon" src="<?php echo get_template_directory_uri(); ?>/images/icon-css.png" alt="cssのアイコン">
             <div>
               <p class="c-skill">css</p>
               <p class="c-text">cssを用いてデザインを忠実に再現します。</p>
             </div>
           </div>
           <div class="p-skill">
-            <img class="c-icon" src="images/icon-js.png" alt="JavaScriptのアイコン">
+            <img class="c-icon" src="<?php echo get_template_directory_uri(); ?>/images/icon-js.png" alt="JavaScriptのアイコン">
             <div>
               <p class="c-skill">JavaScript</p>
               <p class="c-text">jQueryを用いてアニメーションを実装できます。</p>
             </div>
           </div>
           <div class="p-skill">
-            <img class="c-icon" src="images/icon-sass.png" alt="sassのアイコン">
+            <img class="c-icon" src="<?php echo get_template_directory_uri(); ?>/images/icon-sass.png" alt="sassのアイコン">
             <div>
               <p class="c-skill">Sass</p>
               <p class="c-text">状況に応じてFLOCSS等のcss設計を使ってコーディングします。</p>
             </div>
           </div>
           <div class="p-skill">
-            <img class="c-icon" src="images/icon-wordpress.png" alt="WordPressのアイコン">
+            <img class="c-icon" src="<?php echo get_template_directory_uri(); ?>/images/icon-wordpress.png" alt="WordPressのアイコン">
             <div>
               <p class="c-skill">WordPress</p>
               <p class="c-text">お客様がサイトを更新できるよう、WordPress化することができます。</p>
             </div>
           </div>
           <div class="p-skill">
-            <img class="c-icon" src="images/icon-github.png" alt="GitHubのアイコン">
+            <img class="c-icon" src="<?php echo get_template_directory_uri(); ?>/images/icon-github.png" alt="GitHubのアイコン">
             <div>
               <p class="c-skill">Git/GitHub</p>
               <p class="c-text">GitHubにてソースコードを共有できます。</p>
@@ -71,15 +71,15 @@
       <section id="about" class="l-section wrapper js-fade">
         <h2 class="c-section-title">ABOUT</h2>
         <div class="p-profile">
-          <img class="c-image-about" src="images/profile.jpg" alt="顔写真">
+          <img class="c-image-about" src="<?php echo get_template_directory_uri(); ?>/images/profile.jpg" alt="顔写真">
           <div class="p-profile__text">
             <p class="c-text">初めまして。Kahoと申します。<br>Web
             サイトをコーディングしています。</p>
             <p class="c-text">普段は製薬関係の会社に勤めています。<br>エンジニアリングスクール「RaiseTech」の<br>WordPress副業コースを修了し、<br>現在もさらにパワーアップできるよう学習中です。</p>
             <p class="c-text">お客様に寄り添い、ご満足いただけるよう丁寧に対応いたします。<br>よろしくお願いいたします。</p>
             <div class="p-sns">
-              <a href="https://twitter.com/kahodayoon" target="_blank"><img src="images/Link.png" alt="X(Twitter)" class="c-sns"></a>
-              <a href="https://www.instagram.com/k_pic067/" target="_blank"><img src="images/Instagram.png" alt="Instagram" class="c-sns"></a>
+              <a href="https://twitter.com/kahodayoon" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/Link.png" alt="X(Twitter)" class="c-sns"></a>
+              <a href="https://www.instagram.com/k_pic067/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/Instagram.png" alt="Instagram" class="c-sns"></a>
             </div>
           </div>
         </div>
