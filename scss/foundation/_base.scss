@@ -21,6 +21,11 @@ $pc: 1000px; //Figmaのサイズは1920px
   }
 }
 
+  //トップページだけスムーススクロール
+.home html {
+  scroll-behavior: smooth;
+}
+
 html {
   font-size: 62.5%;
   height: 100%;
@@ -53,5 +58,6 @@ li {
 .wrap{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   min-height: 100vh;
 }

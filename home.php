@@ -2,41 +2,38 @@
     <main>
       <div class="l-mainvisual--single">
         <div class="p-single-title wrapper">
-          <h1 class="c-main-title">BLOG</h1>
+          <h1 class="c-main-title"><a href="<?php echo home_url('/blog'); ?>">BLOG</a></h1>
         </div>
       </div>
+      <div class="wrap">
       <div class="p-blog-archive wrapper">
-        <article class="p-blog">
-          <img src="images/sea.jpg" alt="サムネイル画像" class="p-blog__image">
-          <h2 class="c-sub-title p-blog__title">タイトルタイトルタイトル</h2>
-          <p class="c-text p-blog__text">文章が入ります。文章が入ります。文章が入ります。文章が入ります。</p>
-          <button onclick="loction.href='single.html'" class="c-readmore p-blog__readmore">もっと読む
-            <svg class="p-blog__svg" width="100" height="50" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
-              <rect x='0' y='0' fill='none' width='100' height='50'/>
-            </svg>
-          </button>
+      <?php
+        if( have_posts() ) :
+          while( have_posts() ) :
+            the_post(); ?>
+        <article id="post-<?php the_ID(); ?>" <?php post_class('p-blog'); ?>>
+        <?php if (has_post_thumbnail()) : /* もしアイキャッチが登録されていたら */ ?>
+        <?php the_post_thumbnail('full',array( 'class' => 'p-blog__image' )); ?>
+        <?php else: /* 登録されていなかったら */ ?>
+        <a href="<?php echo esc_url(get_permalink()); ?>">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/dummy-image.jpg" alt="ダミー画像" class="p-blog__image"></a>
+        <?php endif; ?>
+        <!-- <?php //the_post_thumbnail('thumbnail', ['class' => 'p-blog__image'] ); ?> -->
+        <h2 class="c-sub-title p-blog__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                <!-- <ul class="post__meta"> -->
+                    <li class="post__meta__item">
+                        <date class="post__meta__date"><?php echo get_the_date(); ?></date>
+                    </li>
+                <?php the_content( ' <button class="c-readmore p-blog__readmore u-paper-raise">もっと読む
+          </button>' ); ?>
         </article>
-        <article class="p-blog">
-          <img src="images/sea.jpg" alt="サムネイル画像" class="p-blog__image">
-          <h2 class="c-sub-title p-blog__title">タイトルタイトルタイトル</h2>
-          <p class="c-text p-blog__text">文章が入ります。文章が入ります。文章が入ります。文章が入ります。</p>
-          <button class="c-readmore p-blog__readmore">もっと読む
-            <svg class="p-blog__svg" width="100" height="50" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
-              <rect x='0' y='0' fill='none' width='100' height='50'/>
-            </svg>
-          </button>
-        </article>
-        <article class="p-blog">
-          <img src="images/sea.jpg" alt="サムネイル画像" class="p-blog__image">
-          <h2 class="c-sub-title p-blog__title">タイトルタイトルタイトル</h2>
-          <p class="c-text p-blog__text">文章が入ります。文章が入ります。文章が入ります。文章が入ります。</p>
-          <button class="c-readmore p-blog__readmore">もっと読む
-            <svg class="p-blog__svg" width="100" height="50" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
-              <rect x='0' y='0' fill='none' width='100' height='50'/>
-            </svg>
-          </button>
-        </article>
+        <?php endwhile;
+       else :
+        ?><p>表示する記事がありません</p><?php
+       endif;
+        ?>        
       </div>
-      
+      <?php wp_pagenavi(); ?>
+      </div>
     </main>
     <?php get_footer(); ?>

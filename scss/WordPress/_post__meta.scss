@@ -1,0 +1,7 @@
+@use "../foundation/base" as *;
+
+.post__meta {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}

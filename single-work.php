@@ -21,6 +21,5 @@
           <p><a class="p-work__link">サイトのURL</a></p>
         </section>
       </div>
-      
     </main>
     <?php get_footer(); ?>

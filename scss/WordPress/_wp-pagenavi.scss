@@ -1,0 +1,41 @@
+@use "../foundation/base" as *;
+
+.wp-pagenavi {
+  text-align: center;
+  margin-bottom: 20px;
+  .pages {
+    border: none;
+    margin-right: 10px;
+  }
+  .nextpostslink,.previouspostslink {
+    border: none;
+  }
+  a {
+    padding: 3px 6px;
+    border: none;
+    &:hover {
+      background-color: $work-color;
+      border: 1px solid $accent-color;
+      border-radius: 5px;
+    }
+  }
+  span.current {
+    background-color: $work-sub-color;
+    border: 1px solid $accent-color;
+    border-radius: 5px;
+    padding: 2px 7px;
+  }
+}
+.wp-pagenavi-single {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  div {
+    display: inline-block;
+  }
+  a {
+    display: block;
+    width: 100%;
+  }
+}

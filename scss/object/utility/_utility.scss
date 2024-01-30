@@ -1,4 +1,4 @@
-@use '../../foundation/base' as *;
+@use "../../foundation/base" as *;
 .u-mb {
   margin-bottom: 30px;
   @include tab {
@@ -13,4 +13,18 @@
 }
 .u-text-left {
   text-align: left;
+}
+
+.u-paper-raise {
+  &:before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &:hover {
+    &:before {
+      box-shadow: 0 15px 10px -10px rgba(212, 172, 173, 0.5);
+    }
+  }
 }

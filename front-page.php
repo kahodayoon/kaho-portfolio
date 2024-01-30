@@ -7,7 +7,7 @@
         </div>
       </div>
       <section id="works" class="l-section wrapper js-fade">
-        <h2 class="c-section-title">WORKS</h2>
+        <h2 class="c-section-title">Works</h2>
         <div class="p-grid-works">
           <a href="single-work.html">
           <div class="p-readmore"> 
@@ -22,7 +22,7 @@
         </div>
       </section>
       <section id="skills" class="l-section wrapper js-fade">
-        <h2 class="c-section-title">SKILLS</h2>
+        <h2 class="c-section-title">Skills</h2>
         <div class="p-grid-skills">
           <div class="p-skill">
             <img class="c-icon" src="<?php echo get_template_directory_uri(); ?>/images/icon-html.png" alt="htmlのアイコン">
@@ -69,7 +69,7 @@
         </div>
       </section>
       <section id="about" class="l-section wrapper js-fade">
-        <h2 class="c-section-title">ABOUT</h2>
+        <h2 class="c-section-title">About</h2>
         <div class="p-profile">
           <img class="c-image-about" src="<?php echo get_template_directory_uri(); ?>/images/profile.jpg" alt="顔写真">
           <div class="p-profile__text">
@@ -85,11 +85,11 @@
         </div>
       </section>
       <section id="blog" class="l-section wrapper u-mb js-fade">
-        <h2 class="c-section-title">BLOG</h2>
+        <h2 class="c-section-title">Blog</h2>
         <p>BLOGは<span class="c-span"><a href="home.html" target="_blank">こちら</a></span>からご覧いただけます。日常記録です。</p>
       </section>
       <section id="contact" class="l-section wrapper u-mb js-fade">
-        <h2 class="c-section-title">CONTACT</h2>
+        <h2 class="c-section-title">Contact</h2>
         <form action="" method="post" class="p-contact">
           <div class="p-form">
             <input id="name" class="c-input-text js-input" type="text" required>
@@ -109,5 +109,6 @@
         </form>       
       </section>
     </main>
-    <button id="js-pagetop" class="c-pagetop"><span class="c-pagetop__arrow"></span></button>
+    <!-- <button id="js-pagetop" class="c-pagetop"><span class="c-pagetop__arrow"></span></button> -->
+    <a href="#" id="js-pagetop" class="c-pagetop"><span class="c-pagetop__arrow"></span></a>
     <?php get_footer(); ?>

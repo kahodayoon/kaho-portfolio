@@ -1,0 +1,25 @@
+@use '../../foundation/base' as *;
+.p-single {
+  padding-top: 30px;
+}
+.p-single__image {
+  margin: 0 auto;
+  padding-bottom: 10px;
+  width: 100%;
+  height: auto;
+  @include tab {
+  width: 70%;
+  }
+  @include pc {
+    width: 60%;
+  }
+}
+
+.p-single {
+  .wp-block-image {
+    padding:10px 0px ;
+  }
+  .wp-block-heading {
+    padding: 5px 0px;
+  }
+}
