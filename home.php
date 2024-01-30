@@ -24,8 +24,8 @@
                     <li class="post__meta__item">
                         <date class="post__meta__date"><?php echo get_the_date(); ?></date>
                     </li>
-                <?php the_content( ' <button class="c-readmore p-blog__readmore u-paper-raise">もっと読む
-          </button>' ); ?>
+          <?php the_content('',FALSE,''); ?>
+          <a href="<?php the_permalink() ?>" class="more-link c-readmore p-blog__readmore u-paper-raise">もっと読む</a>
         </article>
         <?php endwhile;
        else :

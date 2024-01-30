@@ -34,6 +34,15 @@ function add_files(){
 }
 add_action('wp_enqueue_scripts', 'add_files');
 
+//トップページだけ反映させるCSS
+function my_styles()  {
+    //front-page用のCSS
+    if ( is_front_page('front-page') ) {
+      wp_enqueue_style( 'front-page', get_template_directory_uri() . '/css/front-page.css', array(), '1.0.0' );
+      }
+    }
+  add_action( 'wp_enqueue_scripts', 'my_styles' );
+
 //ウェジェット
 function wpbeg_widgets_init() {
     register_sidebar (
