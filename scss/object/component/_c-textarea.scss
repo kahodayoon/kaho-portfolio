@@ -7,14 +7,15 @@
   padding: 10px;
   resize: none;
   text-align: left;
+  background-color: transparent;
   &:focus {
     outline: none;
   }
 }
-.c-textarea:focus,
-.c-textarea.not-empty {
-   + .c-label--message {
-      transform: translateY(-24px);
-   }
-}
+// .c-textarea:focus,
+// .c-textarea.not-empty {
+//    + .c-label--message {
+//       transform: translateY(-24px);
+//    }
+// }
 

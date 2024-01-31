@@ -90,7 +90,7 @@
       </section>
       <section id="contact" class="l-section wrapper u-mb js-fade">
         <h2 class="c-section-title">Contact</h2>
-        <form action="" method="post" class="p-contact">
+        <!-- <form action="" method="post" class="p-contact">
           <div class="p-form">
             <input id="name" class="c-input-text js-input" type="text" required>
             <label class="c-label js-label" for="name">お名前</label>
@@ -106,7 +106,10 @@
           <div class="p-form">
             <button class="c-submit" type="submit" value="Submit">送信</button>
          </div>
-        </form>       
+        </form>  -->
+        <!-- Contact Form 7による問い合わせフォーム -->
+        <?php echo do_shortcode('[contact-form-7 id="604046c" title="Contact"]'); ?> 
+
       </section>
     </main>
     <!-- <button id="js-pagetop" class="c-pagetop"><span class="c-pagetop__arrow"></span></button> -->
