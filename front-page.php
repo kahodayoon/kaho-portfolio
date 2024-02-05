@@ -86,27 +86,47 @@
       </section>
       <section id="blog" class="l-section wrapper u-mb js-fade">
         <h2 class="c-section-title">Blog</h2>
-        <p>BLOGは<span class="c-span"><a href="home.html" target="_blank">こちら</a></span>からご覧いただけます。日常記録です。</p>
+        <p>Kahoの日常記録です。</p>
+        <p class="p-blog-link">Blogをもっと見たい方は<span class="c-span"><a href="<?php echo esc_url( home_url( '/blog' ) ); ?>" >こちら</a></span>からご覧ください。</p>
+            
+      <?php
+        $args = array(
+          'post_type' => 'post', /* 取得したい投稿タイプ */
+          'posts_per_page' => 3, /* 表示したい投稿の数 (すべての取得したい場合は「-1」) */
+        );
+        $the_query = new WP_Query($args); /* クエリの作成と発行をし、取得したデータを「$the_query」に格納 */
+      ?>
+      <?php if ($the_query->have_posts()): /* もし、投稿がある場合 */ ?>
+        <div class="p-blog-archive">
+          <?php while ($the_query->have_posts()) : $the_query->the_post(); /* 投稿のループ開始 */ ?>
+          <li>
+          <article id="post-<?php the_ID(); ?>" <?php post_class('p-blog'); ?>>
+              <?php if (has_post_thumbnail()) : /* もしアイキャッチが登録されていたら */ ?>
+              <?php the_post_thumbnail('full',array( 'class' => 'p-blog__image' )); ?>
+              <?php else: /* 登録されていなかったら */ ?>
+              <a href="<?php echo esc_url(get_permalink()); ?>">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/dummy-image.jpg" alt="ダミー画像" class="p-blog__image"></a>
+              <?php endif; ?>
+              <!-- <?php //the_post_thumbnail('thumbnail', ['class' => 'p-blog__image'] ); ?> -->
+              <h2 class="c-sub-title p-blog__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                      <!-- <ul class="post__meta"> -->
+                          <li class="post__meta__item">
+                              <date class="post__meta__date"><?php echo get_the_date(); ?></date>
+                          </li>
+                <?php the_content('',FALSE,''); ?>
+                <a href="<?php the_permalink() ?>" class="more-link c-readmore p-blog__readmore u-paper-raise">もっと読む</a>
+              </article>
+          </li>
+          <?php endwhile; /* 投稿のループ終了 */ ?>
+          </div>
+      <?php else: /* もし、投稿がない場合 */ ?>
+        <p>まだ投稿がありません。</p>
+      <?php endif; /* 投稿の条件分岐を終了 */ ?>
+      <?php wp_reset_postdata(); /* クエリ(サブループ)のリセット */ ?>
+
       </section>
       <section id="contact" class="l-section wrapper u-mb js-fade">
         <h2 class="c-section-title">Contact</h2>
-        <!-- <form action="" method="post" class="p-contact">
-          <div class="p-form">
-            <input id="name" class="c-input-text js-input" type="text" required>
-            <label class="c-label js-label" for="name">お名前</label>
-          </div>
-          <div class="p-form">
-            <input id="email" class="c-input-text js-input" type="email" required>
-            <label class="c-label js-label" for="email">メールアドレス</label>
-          </div>
-          <div class="p-form">     
-            <textarea id="message" class="c-textarea" name="message" cols="50" rows="10" required></textarea>
-            <label class="c-label--message js-label" for="message">お問い合わせ内容</label>
-          </div>
-          <div class="p-form">
-            <button class="c-submit" type="submit" value="Submit">送信</button>
-         </div>
-        </form>  -->
         <!-- Contact Form 7による問い合わせフォーム -->
         <?php echo do_shortcode('[contact-form-7 id="604046c" title="Contact"]'); ?> 
 

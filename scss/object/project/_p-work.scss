@@ -26,6 +26,9 @@
 }
 .p-work__text {
     padding: 15px 0 0 5%;
+    span + span {
+      padding-left: 10px;
+    }
 }
 .p-work__link {
   display: block;

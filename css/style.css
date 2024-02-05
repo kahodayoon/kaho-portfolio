@@ -67,7 +67,7 @@ li {
 }
 
 .l-section {
-  padding-top: 50px;
+  margin-top: 50px;
   padding-bottom: 10px;
   text-align: center;
 }
@@ -515,6 +515,9 @@ li {
 .p-work__text {
   padding: 15px 0 0 5%;
 }
+.p-work__text span + span {
+  padding-left: 10px;
+}
 
 .p-work__link {
   display: block;
@@ -635,6 +638,7 @@ li {
 
 .p-blog-archive {
   padding-bottom: 30px;
+  text-align: left;
 }
 @media (min-width: 650px) {
   .p-blog-archive {
@@ -894,6 +898,10 @@ li {
 }
 
 .wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output {
+  border: none;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
   border: none;
 }
 /*# sourceMappingURL=style.css.map */

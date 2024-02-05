@@ -1,6 +1,7 @@
 @use '../../foundation/base' as *;
 .p-blog-archive {
   padding-bottom: 30px;
+  text-align: left;
   @include tab {
     display: grid;
     gap: 10px;
