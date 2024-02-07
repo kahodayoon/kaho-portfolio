@@ -71,9 +71,9 @@
     // });
     $(window).scroll(function () {
       if ($(window).scrollTop() > 1) {
-        $("#js-pagetop").fadeIn(300).css("display", "flex");
+        $(".c-pagetop").fadeIn(300).css("display", "flex");
       } else {
-        $("#js-pagetop").fadeOut(300);
+        $(".c-pagetop").fadeOut(300);
       }
     });
   });

@@ -6,10 +6,10 @@
 
 //スクロールで表示される。フェードイン用
 .js-fade {
-  transition: all 1s;
+  transition: all 2s;
   opacity: 0;
   visibility: hidden;
-  transform: translate(0px, 50px);
+  transform: translate(0px, 100px);
 }
 
 .js-fadein {

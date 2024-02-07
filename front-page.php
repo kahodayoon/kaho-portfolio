@@ -8,22 +8,40 @@
       </div>
       <section id="works" class="l-section wrapper js-fade">
         <h2 class="c-section-title">Works</h2>
-        <div class="p-grid-works">
-          <a href="single-work.html">
-          <div class="p-readmore"> 
-            <img class="c-image-work" src="<?php echo get_template_directory_uri(); ?>/images/work1.png" alt="作品例1">
-          </div></a>
-          <div class="p-readmore">
-            <img class="c-image-work" src="<?php echo get_template_directory_uri(); ?>/images/350x350.png" alt="作品例2">
-          </div>
-          <div class="p-readmore">
-            <img class="c-image-work" src="<?php echo get_template_directory_uri(); ?>/images/350x350.png" alt="作品例3">
-          </div>
+        <?php
+        $args = array(
+          'post_type' => 'works', /* 取得したい投稿タイプ */
+          'posts_per_page' => -1, /* 表示したい投稿の数 (すべての取得したい場合は「-1」) */
+        );
+        $the_query = new WP_Query($args); /* クエリの作成と発行をし、取得したデータを「$the_query」に格納 */
+        ?>
+       <div class="p-grid-works">
+        <?php if ($the_query->have_posts()): /* もし、投稿がある場合 */ ?>
+        <?php while ($the_query->have_posts()) : $the_query->the_post(); /* 投稿のループ開始 */ ?>
+          <li>
+          <article id="post-<?php the_ID(); ?>" <?php post_class('p-blog'); ?>>
+              <?php if (has_post_thumbnail()) : /* もしアイキャッチが登録されていたら */ ?>
+              <a href="<?php echo esc_url(get_permalink()); ?>">
+              <div class="p-readmore">
+              <?php the_post_thumbnail('medium',array( 'class' => 'c-image-work' )); ?>
+              </div>
+              </a>
+              <?php else: /* 登録されていなかったら */ ?>
+              <img src="<?php echo get_template_directory_uri(); ?>/images/dummy-image.jpg" alt="ダミー画像" class="p-blog__image">
+              <?php endif; ?>      
+              </article>
+          </li>
+          <?php endwhile; /* 投稿のループ終了 */ ?>
+          <?php else: /* もし、投稿がない場合 */ ?>
         </div>
+        <p>まだ投稿がありません。</p>
+      <?php endif; /* 投稿の条件分岐を終了 */ ?>
+      <?php wp_reset_postdata(); /* クエリ(サブループ)のリセット */ ?>
       </section>
-      <section id="skills" class="l-section wrapper js-fade">
-        <h2 class="c-section-title">Skills</h2>
-        <div class="p-grid-skills">
+
+      <section id="skill" class="l-section wrapper js-fade">
+        <h2 class="c-section-title">Skill</h2>
+        <div class="p-grid-skill">
           <div class="p-skill">
             <img class="c-icon" src="<?php echo get_template_directory_uri(); ?>/images/icon-html.png" alt="htmlのアイコン">
             <div>
@@ -85,9 +103,9 @@
         </div>
       </section>
       <section id="blog" class="l-section wrapper u-mb js-fade">
-        <h2 class="c-section-title">Blog</h2>
+        <h2 class="c-section-title"><a href="<?php echo home_url('/blog'); ?>">Blog</a></h2>
         <p>Kahoの日常記録です。</p>
-        <p class="p-blog-link">Blogをもっと見たい方は<span class="c-span"><a href="<?php echo esc_url( home_url( '/blog' ) ); ?>" >こちら</a></span>からご覧ください。</p>
+        <p class="p-blog-link">もっと見たい方は<span class="c-span"><a href="<?php echo esc_url( home_url( '/blog' ) ); ?>" >Blog一覧</a></span>からご覧ください。</p>
             
       <?php
         $args = array(
@@ -132,6 +150,5 @@
 
       </section>
     </main>
-    <!-- <button id="js-pagetop" class="c-pagetop"><span class="c-pagetop__arrow"></span></button> -->
     <a href="#" id="js-pagetop" class="c-pagetop"><span class="c-pagetop__arrow"></span></a>
     <?php get_footer(); ?>

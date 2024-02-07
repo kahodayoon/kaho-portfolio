@@ -8,6 +8,13 @@ $sub-color:#E4D2D8;
 $work-color:#FEF4F4;
 $work-sub-color:#FDEFF2;
 
+$pagetop: 390px; 
+@mixin pagetop {
+  @media (min-width: ($pagetop)) {
+    @content;
+  }
+}
+
 $tab: 650px; //Figmaのサイズは834px
 @mixin tab {
   @media (min-width: ($tab)) {
@@ -26,6 +33,7 @@ html {
   height: 100%;
 }
 body {
+  width: 100%;
   font-size: 1.6rem;
   font-family: $font-jp;
   font-family: $font-en;
@@ -49,6 +57,8 @@ li {
   padding: 0 5.2%;
   max-width: 960px;
 }
+
+
 //フッターを常に下部へ固定。
 .wrap{
   display: flex;
