@@ -1,8 +1,5 @@
 @use '../../foundation/base' as *;
 .c-pagetop {
-  position: static;
-  display: none;
-  @include pagetop {
   height: 40px;
   width: 40px;
   position: fixed;
@@ -17,15 +14,11 @@
   z-index: 2;
   cursor: pointer;
   transition: .5s;
-  }
   @include pc {
     right: 5%;
   }
 }
 .c-pagetop__arrow {
-  position: static;
-  display: none;
-  @include pagetop {
   display: block;
   height: 10px;
   width: 10px;
@@ -33,7 +26,6 @@
   border-right: 2px solid #808080;
   transform: translateY(20%) rotate(-45deg);
   transition: .5s;
-  }
 }
 
 @media (hover: hover) and (pointer: fine) {
