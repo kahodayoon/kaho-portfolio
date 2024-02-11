@@ -4,7 +4,7 @@
 *::after {
   box-sizing: border-box;
 }
-
+/* 
 /* フォントサイズの拡大を防ぐ */
 html {
   -moz-text-size-adjust: none;
@@ -69,4 +69,4 @@ textarea:not([rows]) {
 /* アンカーされている要素には余分なスクロールマージンが必要 */
 :target {
   scroll-margin-block: 5ex;
-}
+} 

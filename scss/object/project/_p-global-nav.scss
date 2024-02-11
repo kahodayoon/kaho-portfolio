@@ -2,11 +2,11 @@
 .p-global-nav {
   display: block;
   position: fixed;
-  width: 70%;
+  width: 70vw;
   top: 0px;
   bottom: 0;
-  padding: 60px 25px;
-  right: -100%;
+  padding-top: 60px;
+  right: -100vw;
   transition: 0.7s;
   background-color: #fff;
   @include tab {

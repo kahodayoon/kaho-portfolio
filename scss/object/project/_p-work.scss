@@ -9,23 +9,36 @@
 }
 
 .p-work__h3 {
-  padding: 15px 25px ;
-  font-size: 1.6rem;
-  width: 200px;
+  padding: 10px 25px ;
+  font-size: 1.2rem;
+  width: 150px;
   background-color: $work-color;
   position: relative;
+  @include tab {
+    font-size: 1.6rem;
+    width: 200px;
+    padding: 15px 25px ;
+  }
   &::before {
     content: " ";
     width: 20px;
-    height: 47.59px;
+    height: 33.2px;
     position: absolute;
     top: 0;
     left: 0;
     background-color: $work-sub-color;
+    @include tab {
+    height: 47.59px;
+
+    }
   }
 }
 .p-work__text {
     padding: 15px 0 0 5%;
+    font-size: 1.4rem;
+    @include tab {
+      font-size: 1.6rem;
+    }
     span + span {
       padding-left: 10px;
     }

@@ -1,3 +1,4 @@
+<!-- 使用しないかも。 -->
 <?php get_header(); ?> 
 <main>
       <div class="l-mainvisual--single">

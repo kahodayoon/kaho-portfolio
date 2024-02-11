@@ -3,7 +3,7 @@
       <div class="l-mainvisual">
         <div class="p-top wrapper">
           <h1 class="c-main-title">Kaho<br>Portfolio</h1>
-          <p class="c-text">お客様の大切なデザインを丁寧にコーディングします。</p>
+          <p class="c-main-title__text">お客様の大切なデザインを丁寧にコーディングします。</p>
         </div>
       </div>
       <section id="works" class="l-section wrapper js-fade">
@@ -150,5 +150,5 @@
 
       </section>
     </main>
-    <a href="#" id="js-pagetop" class="c-pagetop"><span class="c-pagetop__arrow"></span></a>
+    <!-- <a href="#" id="js-pagetop" class="c-pagetop"><span class="c-pagetop__arrow"></span></a> -->
     <?php get_footer(); ?>

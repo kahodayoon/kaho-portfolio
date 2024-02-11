@@ -1,4 +1,7 @@
 @use '../../foundation/base' as *;
 .c-sub-title {
+  font-size: 2rem ;
+  @include tab {
   font-size: 2.5rem;
+  }
 }
