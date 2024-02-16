@@ -321,19 +321,6 @@ li {
   outline: none;
 }
 
-.c-submit {
-  padding: 10px 20px;
-  border-radius: 50%;
-  background-color: #fef4f4;
-  border: #888 2px solid;
-  cursor: pointer;
-  transition: 0.6s;
-}
-.c-submit:hover {
-  border-color: #fef4f4;
-  background-color: #F6BFBC;
-}
-
 .c-span {
   border-bottom: 1px solid #F6BFBC;
   transition: 0.3s;

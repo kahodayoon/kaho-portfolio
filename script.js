@@ -8,8 +8,6 @@
       if (scroll + winheight > posi) {
         $(this).addClass("js-fadein");
       } else {
-        //スクロールで画面上部に戻った際に要素を非表示にしたい場合は、下記の行のコメントを外し有効にしてください。
-        //$(this).removeClass("js-fadein");
       }
     });
   });
@@ -32,16 +30,6 @@
     $(".js-home").removeClass("open");
   });
 
-  // //スムーススクロール
-  // $('a[href^="#"]').click(function () {
-  //   let speed = 500;
-  //   let type = "swing";
-  //   let href = $(this).attr("href");
-  //   let target = $(href == "#index" ? "html" : href);
-  //   let position = target.offset().top;
-  //   $("body,html").animate({ scrollTop: position }, speed, type);
-  //   return false;
-  // });
 
   //CONTACTフォーム
   $(".c-input-text").keyup(function () {
@@ -61,14 +49,6 @@
 
   //ページトップに戻るボタン
   $(function () {
-    // $("#js-pagetop").click(function () {
-    //   $("html, body").animate(
-    //     {
-    //       scrollTop: 0,
-    //     },
-    //     300    
-    //     );
-    // });
     $(window).scroll(function () {
       if ($(window).scrollTop() > 1) {
         $(".c-pagetop").fadeIn(300).css("display", "flex");
@@ -78,21 +58,5 @@
     });
   });
 
-  //もっとみるのボタン
-  $(function() {  
-    $('.btn-0')
-      .on('mouseenter', function(e) {
-        var parentOffset = $(this).offset(),
-            relX = e.pageX - parentOffset.left,
-            relY = e.pageY - parentOffset.top;
-        $(this).find('span').css({top:relY, left:relX})
-      })
-      .on('mouseout', function(e) {
-        var parentOffset = $(this).offset(),
-            relX = e.pageX - parentOffset.left,
-            relY = e.pageY - parentOffset.top;
-        $(this).find('span').css({top:relY, left:relX})
-      });
-  });
 
 })(jQuery);
