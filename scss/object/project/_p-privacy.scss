@@ -6,3 +6,19 @@
     margin: 0;
   }
 }
+.p-privacy--page {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  h2 {
+    font-size: 2rem;
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+  p {
+    padding-bottom: 10px;
+  }
+  strong {
+    font-weight: bold;
+    border-bottom: 1px solid #3c2a10;
+  }
+}

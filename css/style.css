@@ -512,11 +512,6 @@ li {
   padding-top: 20px;
 }
 
-.p-form {
-  position: relative;
-  margin-bottom: 40px;
-}
-
 @media (min-width: 650px) {
   .p-grid-skill {
     display: grid;
@@ -549,6 +544,10 @@ li {
 
 .p-work__section {
   padding-bottom: 40px;
+}
+.p-work__section img {
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
 
 .p-work__h3 {
@@ -790,6 +789,23 @@ li {
   margin: 0;
 }
 
+.p-privacy--page {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.p-privacy--page h2 {
+  font-size: 2rem;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+.p-privacy--page p {
+  padding-bottom: 10px;
+}
+.p-privacy--page strong {
+  font-weight: bold;
+  border-bottom: 1px solid #3c2a10;
+}
+
 .u-mb {
   margin-bottom: 30px;
 }
@@ -976,6 +992,7 @@ li {
 }
 .wpcf7-form .p-form {
   margin-bottom: 15px;
+  position: relative;
 }
 .wpcf7-form .p-form p:has(.wpcf7-not-valid-tip) .c-label {
   bottom: 50px;
@@ -1018,6 +1035,11 @@ li {
   border-color: #fef4f4;
   background-color: #F6BFBC;
 }
+.wpcf7-form .wpcf7-form > p {
+  display: block;
+  text-align: left;
+  padding-bottom: 10px;
+}
 .wpcf7-form .wpcf7-not-valid-tip {
   text-align: left;
 }
@@ -1028,5 +1050,13 @@ li {
 
 .wpcf7 form.sent .wpcf7-response-output {
   border: none;
+}
+
+.p-form--privacy {
+  margin-bottom: 20px;
+  text-align: left;
+}
+.p-form--privacy .wpcf7-list-item {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

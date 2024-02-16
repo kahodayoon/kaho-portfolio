@@ -5,6 +5,7 @@
   margin-bottom: 40px;
   .p-form {
     margin-bottom: 15px;
+    position: relative;
     p:has(.wpcf7-not-valid-tip) {
       .c-label {
         bottom: 50px;
@@ -41,6 +42,7 @@
     display: none;
   }
  }
+ 
   .wpcf7-submit {
     display: inline-block;
     padding: 10px 20px;
@@ -54,14 +56,27 @@
       background-color: $accent-color;
     }
   }
+  .wpcf7-form > p {
+    display: block;
+    text-align: left;
+    padding-bottom: 10px;
+  }
   //送信後の不備があった場合のメッセージのスタイリング
   .wpcf7-not-valid-tip {
     text-align: left;
   }
+
 }
 .wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output {
   border: none;
 }
 .wpcf7 form.sent .wpcf7-response-output {
   border: none;
+}
+.p-form--privacy {
+  margin-bottom: 20px;
+  text-align: left;
+  .wpcf7-list-item {
+    margin: 0;
+  }
 }

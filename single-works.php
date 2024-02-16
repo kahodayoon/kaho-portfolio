@@ -5,22 +5,6 @@
           <h1 class="c-main-title"><a href="<?php echo home_url('#works'); ?>">Works</a></h1>
         </div>
       </div>
-      <!-- <h2 class="c-sub-title p-work--title wrapper">架空サイト（Cafe）</h2>
-      <img class="c-image-site wrapper u-mb" src="images/work1.png" alt="PCの作品画像">
-      <div class="p-work wrapper">
-        <section class="p-work__section">
-          <h3 class="p-work__h3">使用したスキル</h3>
-          <p class="p-work__text">HTML,CSS,JavaScript</p>
-        </section>
-        <section class="p-work__section">
-          <h3 class="p-work__h3">工夫点</h3>
-          <p class="p-work__text">工夫した点を記述します。工夫した点を記述します。工夫した点を記述します。工夫した点を記述します。工夫した点を記述します。</p>
-        </section>
-        <section class="p-work__section">
-          <h3 class="p-work__h3">URL</h3>
-          <p><a class="p-work__link">サイトのURL</a></p>
-        </section>
-      </div> -->
       <div class="p-single wrapper wrap">
       <?php
     if( have_posts() ) :
@@ -28,8 +12,8 @@
             the_post(); ?>
             <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <h2 class="c-sub-title p-work--title"><?php the_title(); ?></h2>
-                <?php the_post_thumbnail('medium', ['class' => 'p-single__image'] ); ?>
         <section class="p-work__section">
+        <img src="<?php the_field("site_image"); ?>" >
           <h3 class="p-work__h3">使用したスキル</h3>
           <p class="p-work__text">
           <?php echo the_field( "skill" );?>
