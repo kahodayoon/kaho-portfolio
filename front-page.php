@@ -150,5 +150,5 @@
 
       </section>
     </main>
-    <!-- <a href="#" id="js-pagetop" class="c-pagetop"><span class="c-pagetop__arrow"></span></a> -->
+    <a href="#" id="js-pagetop" class="c-pagetop"><span class="c-pagetop__arrow"></span></a>
     <?php get_footer(); ?>

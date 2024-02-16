@@ -58,3 +58,18 @@ function wpbeg_widgets_init() {
     );
 }
 add_action( 'widgets_init', 'wpbeg_widgets_init' );
+//メニュー位置の設定
+if ( ! function_exists( 'lab_setup' ) ) :
+
+    function lab_setup() {
+    
+        register_nav_menus( array(
+            'global' => 'グローバルナビ',
+            'header' => 'ヘッダーナビ',
+            'footer' => 'フッターナビ',
+        ) );
+    
+    }
+    endif;
+    add_action( 'after_setup_theme', 'lab_setup' );
+    

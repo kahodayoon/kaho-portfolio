@@ -1,8 +1,12 @@
 @use '../foundation/base' as *;
 .l-footer {
   margin-top: auto;
-  height: 30px;
   text-align: center;
   color: #fff;
   background-color: $sub-color;
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
