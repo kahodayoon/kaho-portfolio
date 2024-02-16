@@ -1,7 +1,5 @@
 @use "../foundation/base" as *;
 .menu-gmenu-container {
- 
-
   .menu {
     padding: 60px 5%;
     display: flex;
@@ -23,7 +21,6 @@
     @include tab {
       font-size: 2rem;
     }
-    // width: 40%;
     //ホバー時のキラッと光るアニメーション
     a {
     display: inline-block;
@@ -37,13 +34,11 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    // transition: .2s;
     }
   }
   .menu-item > a:hover {
     animation: shine 1.5s;
     font-weight: 1000;
-    // transform: translateY(-5px);
   }
   @keyframes shine {
     0% {

@@ -40,43 +40,6 @@
   object-fit: cover;
 }
 
-// .p-blog__readmore {
-//   display: block;
-//   width: 100px;
-//   height: 50px;
-//   margin-left: auto;
-// }
-// .p-blog__svg {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-// }
-// .p-blog__svg rect {
-//   fill: none;
-//   stroke: #d4acad;
-//   stroke-width: 1;
-// }
-// .p-blog__readmore:hover svg rect {
-//   stroke: #d4acad;
-// }
-// .p-blog__svg rect {
-//   stroke-dasharray: 400, 0;
-//   -webkit-transition: all 0.8s ease-in-out;
-//   -moz-transition: all 0.8s ease-in-out;
-//   -ms-transition: all 0.8s ease-in-out;
-//   -o-transition: all 0.8s ease-in-out;
-// }
-// .p-blog__readmore:hover svg rect {
-//   stroke-width: 3;
-//   // stroke-dasharray: 35, 245;
-//   stroke-dasharray: 50, 200;
-//   stroke-dashoffset: 75;
-//   -webkit-transition: all 0.8s ease-in-out;
-//   -moz-transition: all 0.8s ease-in-out;
-//   -ms-transition: all 0.8s ease-in-out;
-//   -o-transition: all 0.8s ease-in-out;
-// }
-
 .p-blog__readmore {
   position: relative;
   display: block;
