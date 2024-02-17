@@ -1002,6 +1002,7 @@ li {
   display: none;
 }
 .wpcf7-form .wpcf7-submit {
+  color: #3C2B1C;
   display: inline-block;
   padding: 10px 20px;
   border-radius: 50%;

@@ -27,7 +27,7 @@
         </section>
         <section class="p-work__section">
           <h3 class="p-work__h3">URL</h3>
-          <p><a class="p-work__link"><?php echo the_field( "site_url" );?></a></p>
+          <p><a class="p-work__link"  href="<?php echo the_field( "site_url" );?>"　 target=”_blank”><?php echo the_field( "site_url" );?></a></p>
         </section>
                 
                 <?php $args = array (

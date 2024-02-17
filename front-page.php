@@ -3,7 +3,7 @@
       <div class="l-mainvisual">
         <div class="p-top wrapper">
           <h1 class="c-main-title">Kaho<br>Portfolio</h1>
-          <p class="c-main-title__text">お客様の大切なデザインを丁寧にコーディングします。</p>
+          <p class="c-main-title__text">お客様の大切なデザインを丁寧にコーディングします。</p>
         </div>
       </div>
       <section id="works" class="l-section wrapper js-fade">
@@ -94,10 +94,10 @@
             <p class="c-text">初めまして。Kahoと申します。<br>Web
             サイトをコーディングしています。</p>
             <p class="c-text">普段は製薬関係の会社に勤めています。<br>エンジニアリングスクール「RaiseTech」の<br>WordPress副業コースを修了し、<br>現在もさらにパワーアップできるよう学習中です。</p>
-            <p class="c-text">お客様に寄り添い、ご満足いただけるよう丁寧に対応いたします。<br>よろしくお願いいたします。</p>
+            <p class="c-text">ご満足いただけるよう丁寧に対応いたします。<br>よろしくお願いいたします。</p>
             <div class="p-sns">
               <a href="https://twitter.com/kahodayoon" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/Link.png') ?>" alt="X(Twitter)" class="c-sns"></a>
-              <a href="https://www.instagram.com/k_pic067/" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/Instagram.png') ?>" alt="Instagram" class="c-sns"></a>
+              <a href="https://www.instagram.com/kaho_web/" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/Instagram.png') ?>" alt="Instagram" class="c-sns"></a>
             </div>
           </div>
         </div>
