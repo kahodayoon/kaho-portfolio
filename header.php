@@ -18,6 +18,9 @@
         <span class="c-hamburger__bar"></span>
       </button>
       <nav id="global-nav" class="p-global-nav">
-      <?php wp_nav_menu(); ?>
+      <?php wp_nav_menu( array(
+            'theme_location' => 'global',
+            'depth'          => 1,
+          ) ); ?>
       </div>
     </header>

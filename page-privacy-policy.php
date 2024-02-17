@@ -2,7 +2,7 @@
 <main>
       <div class="l-mainvisual--single">
         <div class="p-single-title wrapper">
-          <h1 class="c-main-title"><a href="<?php echo home_url('/privacy-policy'); ?>">Privacy Policy</a></h1>
+          <h1 class="c-main-title"><a href="<?php echo esc_url(home_url('/privacy-policy')); ?>">Privacy Policy</a></h1>
         </div>
       </div>
       <div class="wrap">

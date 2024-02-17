@@ -1,9 +1,10 @@
 <?php
     //テーマサポート
-    add_theme_support( 'menus' );
+    register_nav_menus() ;
     add_theme_support( 'title-tag' );
     add_theme_support( 'post-thumbnails' ); 
     the_post_thumbnail( 'medium' ); 
+
      //タイトル出力
      function portfolio_title( $title ) {
         if ( is_front_page() && is_home() ) { //トップページなら
@@ -14,6 +15,8 @@
             return $title;
         }
     add_filter( 'pre_get_document_title', 'portfolio_title' );
+
+
 
 //テーマディレクトリまでのパスを定数にしておく
 define("DIRE", get_template_directory_uri());
@@ -38,21 +41,6 @@ function my_styles()  {
     }
   add_action( 'wp_enqueue_scripts', 'my_styles' );
 
-//ウェジェット
-function wpbeg_widgets_init() {
-    register_sidebar (
-        array(
-            'name'          => 'カテゴリーウィジェット',
-            'id'            => 'category_widget',
-            'description'   => 'カテゴリー用ウィジェットです',
-            'before_widget' => '<div id="%1$s" class="widget %2$s">',
-            'after_widget'  => '</div>',
-            'before_title'  => '<h2><i class="fa fa-folder-open" aria-hidden="true"></i>',
-            'after_title'   => "</h2>\n",
-        )
-    );
-}
-add_action( 'widgets_init', 'wpbeg_widgets_init' );
 //メニュー位置の設定
 if ( ! function_exists( 'lab_setup' ) ) :
     function lab_setup() {
@@ -65,3 +53,20 @@ if ( ! function_exists( 'lab_setup' ) ) :
     endif;
     add_action( 'after_setup_theme', 'lab_setup' );
     
+    
+    //テーマチェックにて追加
+    add_theme_support( "wp-block-styles" ) ;
+    add_theme_support( "responsive-embeds" );
+    //add_theme_support( "custom-logo", true) ;
+    add_theme_support( "align-wide" );
+    //カスタム背景有効化
+    add_theme_support( 'custom-background' );
+    //カスタムヘッダー画像有効化
+    add_theme_support( 'custom-header' );
+    //コメントフォーム、検索フォーム、コメントリストをhtml5マークアップ
+    add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script' ) );
+    // ビジュアルエディタ用の css 読み込み
+    add_editor_style( 'css/style.css' );
+    //フィードの設定
+    add_theme_support( 'automatic-feed-links' );
+
