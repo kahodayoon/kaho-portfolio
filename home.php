@@ -14,10 +14,10 @@
         <article id="post-<?php the_ID(); ?>" <?php post_class('p-blog'); ?>>
         <?php if (has_post_thumbnail()) : ?>
         <a href="<?php echo esc_url(get_permalink()); ?>">
-        <?php the_post_thumbnail('full',array( 'class' => 'p-blog__image' )); ?></a>
+        <?php the_post_thumbnail('full',array( 'class' => 'c-archive-image' )); ?></a>
         <?php else:  ?>
         <a href="<?php echo esc_url(get_permalink()); ?>">
-        <img  src="<?php echo esc_url( get_template_directory_uri() . '/images/dummy-image.jpg' ) ?>" alt="ダミー画像" class="p-blog__image"></a>
+        <img  src="<?php echo esc_url( get_template_directory_uri() . '/images/dummy-image.jpg' ) ?>" alt="ダミー画像" class="c-archive-image"></a>
         <?php endif; ?>
         <h2 class="c-sub-title p-blog__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                     <li class="post__meta__item">

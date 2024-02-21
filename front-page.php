@@ -7,7 +7,7 @@
         </div>
       </div>
       <section id="works" class="l-section wrapper js-fade">
-        <h2 class="c-section-title">Works</h2>
+        <h2 class="c-section-title"><a href="<?php echo esc_url(get_post_type_archive_link('works')); ?>">Works</a></h2>
         <?php
         $args = array(
           'post_type' => 'works', 

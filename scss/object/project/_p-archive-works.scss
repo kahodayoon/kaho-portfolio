@@ -1,0 +1,50 @@
+@use "../../foundation/base" as *;
+.p-archive-work {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  @include tab {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+}
+.p-archive-work:last-of-type {
+  padding-bottom: 80px;
+}
+.p-archive-work__image {
+  width: 80vw;
+  height: 80vw;
+  margin: 0 auto;
+  @include tab {
+    width: 250px;
+    height: 250px;
+  }
+}
+.p-archive-work--skill {
+  padding: 10px;
+  border-bottom: 1px solid $accent-color;
+}
+
+.p-archive-work__h3 {
+  font-size: 1.4rem;
+  padding-bottom: 5px;
+  @include tab {
+    font-size: 1.6rem;
+  }
+}
+.p-archive-work__text {
+  font-size: 1.4rem;
+  padding-left: 30px;
+  @include tab {
+    font-size: 1.6rem;
+  }
+}
+
+.p-archive-works__title {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  @include tab {
+    text-align: left;
+  }
+}
