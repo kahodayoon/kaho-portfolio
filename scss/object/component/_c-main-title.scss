@@ -11,6 +11,9 @@
 
 .c-main-title__text {
   font-size: 1.4rem;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: flowing-anim 6s;
   @include tab {
     font-size: 1.6rem;
   }
@@ -18,3 +21,11 @@
     font-size: 2rem;
   }
 }
+@keyframes flowing-anim {
+  0%{
+      width: 0%;
+    }
+ 100%{
+      width: 100%;
+    }
+ }

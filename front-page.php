@@ -2,8 +2,25 @@
     <main>
       <div class="l-mainvisual">
         <div class="p-top wrapper">
-          <h1 class="c-main-title">Kaho<br>Portfolio</h1>
-          <p class="c-main-title__text">お客様の大切なデザインを丁寧にコーディングします。</p>
+          <!-- <h1 class="c-main-title">Kaho<br>Portfolio</h1>
+          <p class="c-main-title__text">お客様の大切なデザインを丁寧にコーディングします。</p> -->
+ <!-- svgアニメーション -->
+ <svg class="intro" viewbox="0 0 200 60">
+  <text text-anchor="start" x="0" y="30" class="text text-stroke" clip-path="url(#text1)">Kaho</text>
+  <text text-anchor="start" x="0" y="50" class="text text-stroke" clip-path="url(#text2)">Portfolio</text>
+  <text text-anchor="start" x="0" y="30" class="text text-stroke text-stroke-2" clip-path="url(#text1)">Kaho</text>
+  <text text-anchor="start" x="0" y="50" class="text text-stroke text-stroke-2" clip-path="url(#text2)">Portfolio</text>
+  <defs>
+    <clipPath id="text1">
+      <text text-anchor="start" x="0" y="30" class="text">Kaho</text>
+    </clipPath>
+    <clipPath id="text2">
+      <text text-anchor="start" x="0" y="50" class="text">Portfolio</text>
+    </clipPath>
+  </defs
+</svg>
+<p class="c-main-title__text">お客様の大切なデザインを丁寧にコーディングします。</p>
+<!-- ここまで -->
         </div>
       </div>
       <section id="works" class="l-section wrapper js-fade">
