@@ -2,25 +2,8 @@
     <main>
       <div class="l-mainvisual">
         <div class="p-top wrapper">
-          <!-- <h1 class="c-main-title">Kaho<br>Portfolio</h1>
-          <p class="c-main-title__text">お客様の大切なデザインを丁寧にコーディングします。</p> -->
- <!-- svgアニメーション -->
- <svg class="intro" viewbox="0 0 200 60">
-  <text text-anchor="start" x="0" y="30" class="text text-stroke" clip-path="url(#text1)">Kaho</text>
-  <text text-anchor="start" x="0" y="50" class="text text-stroke" clip-path="url(#text2)">Portfolio</text>
-  <text text-anchor="start" x="0" y="30" class="text text-stroke text-stroke-2" clip-path="url(#text1)">Kaho</text>
-  <text text-anchor="start" x="0" y="50" class="text text-stroke text-stroke-2" clip-path="url(#text2)">Portfolio</text>
-  <defs>
-    <clipPath id="text1">
-      <text text-anchor="start" x="0" y="30" class="text">Kaho</text>
-    </clipPath>
-    <clipPath id="text2">
-      <text text-anchor="start" x="0" y="50" class="text">Portfolio</text>
-    </clipPath>
-  </defs
-</svg>
-<p class="c-main-title__text">お客様の大切なデザインを丁寧にコーディングします。</p>
-<!-- ここまで -->
+          <h1 class="c-main-title">Kaho<br>Portfolio</h1>
+          <p class="c-main-title__text">お客様の大切なデザインを丁寧にコーディングします。</p>
         </div>
       </div>
       <section id="works" class="l-section wrapper js-fade">
@@ -32,17 +15,19 @@
         );
         $the_query = new WP_Query($args); 
         ?>
-       <div class="p-grid-works">
+       <div class="slider">
         <?php if ($the_query->have_posts()): ?>
         <?php while ($the_query->have_posts()) : $the_query->the_post();  ?>
           <li>
           <article id="post-<?php the_ID(); ?>" <?php post_class('p-blog'); ?>>
               <?php if (has_post_thumbnail()) :  ?>
-              <a href="<?php echo esc_url(get_permalink()); ?>">
-              <div class="p-readmore">
-              <?php the_post_thumbnail('medium',array( 'class' => 'c-image-work' )); ?>
+              <div class="js-inner">
+                <a href="<?php echo esc_url(get_permalink()); ?>">
+                <div class="p-readmore">
+                <?php the_post_thumbnail('medium',array( 'class' => 'c-image-work' )); ?>
+                </div>
+                </a>
               </div>
-              </a>
               <?php else: ?>
               <img src="<?php echo esc_url( get_template_directory_uri() . '/images/dummy-image.jpg' ) ?>" alt="ダミー画像" class="p-blog__image">
               <?php endif; ?>      

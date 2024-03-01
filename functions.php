@@ -70,3 +70,14 @@ if ( ! function_exists( 'lab_setup' ) ) :
     //フィードの設定
     add_theme_support( 'automatic-feed-links' );
 
+//slickの追加
+function add_slick_files() {
+    //CSSの読み込み
+    wp_enqueue_style('slick-style', get_template_directory_uri() . '/slick/slick.css', array(), '1.0.0');
+    wp_enqueue_style('slick-theme-style', get_template_directory_uri() . '/slick/slick-theme.css', array('slick-style'), '1.0.0');
+  
+    //jsの読み込み
+    wp_enqueue_script( 'slick-script', get_template_directory_uri() . '/slick/slick.min.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script( 'slider-script', get_template_directory_uri() . '/slider.js', array('slick-script'), '1.0.0', true);
+  }
+  add_action( 'wp_enqueue_scripts', 'add_slick_files' );

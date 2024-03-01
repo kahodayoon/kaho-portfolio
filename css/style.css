@@ -174,10 +174,6 @@ li {
 
 .c-main-title__text {
   font-size: 1.4rem;
-  overflow: hidden;
-  white-space: nowrap;
-  -webkit-animation: flowing-anim 6s;
-          animation: flowing-anim 6s;
 }
 @media (min-width: 650px) {
   .c-main-title__text {
@@ -190,23 +186,6 @@ li {
   }
 }
 
-@-webkit-keyframes flowing-anim {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-@keyframes flowing-anim {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
 .c-sub-title {
   font-size: 2rem;
 }
@@ -923,59 +902,21 @@ li {
   transform: translate(0px, 0px);
 }
 
-svg.intro {
-  width: 300px;
+#works .slick-prev:before, #works .slick-next:before {
+  color: #F6BFBC;
 }
-@media (min-width: 1000px) {
-  svg.intro {
-    width: 500px;
-  }
+#works .slick-next {
+  right: -5px;
+  z-index: 100;
 }
-svg.intro .text {
-  display: none;
+#works .slick-prev {
+  left: -5px;
+  z-index: 100;
 }
-svg.intro.go .text {
-  font-size: 20px;
-  display: block;
-}
-svg.intro.go .text-stroke {
-  fill: none;
-  stroke: #F6BFBC;
-  stroke-width: 2.8px;
-  stroke-dashoffset: -500;
-  stroke-dasharray: 900;
-  stroke-linecap: butt;
-  stroke-linejoin: round;
-  -webkit-animation: dash 2.5s ease-in-out forwards;
-          animation: dash 2.5s ease-in-out forwards;
-  -webkit-animation-delay: -1.5s;
-          animation-delay: -1.5s;
-}
-svg.intro.go .text-stroke:nth-child(2) {
-  -webkit-animation-delay: -1s;
-          animation-delay: -1s;
-}
-svg.intro.go .text-stroke:nth-child(3) {
-  -webkit-animation-delay: -0.3s;
-          animation-delay: -0.3s;
-}
-svg.intro.go .text-stroke-2 {
-  stroke: #3C2B1C;
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+#works .js-inner {
+  padding: 5px;
 }
 
-@-webkit-keyframes dash {
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes dash {
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
 .more-link {
   display: block;
   width: 100px;

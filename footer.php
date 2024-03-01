@@ -11,5 +11,6 @@
     </footer>
     <?php wp_footer(); ?>
   </div>
+  <script src="slick/slick.min.js"></script>
   </body>
 </html>
